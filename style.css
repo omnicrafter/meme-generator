@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #aeccb3;
+  z-index: -1;
+}
+
+.topPortion {
+  padding: 20px;
+  background-color: #fff9d1;
+}
+h1 {
+  width: 50%;
+  margin: 20px auto;
+  padding: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  color: white;
+  background-color: #a6a0b2;
+  border-radius: 20px;
+}
+
+.formContainer {
+  width: 45%;
+  padding: 15px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffd0ca;
+  border-radius: 20px;
+}
+
+.submitButton {
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 8px;
+  border-width: 0;
+  font-family: "Archivo", sans-serif;
+  color: #2e2c33;
+  background-color: #9cb0b2;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.memeContainer {
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 35px;
+}
+.image {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  border-radius: 20px;
+}
+
+.top {
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  user-select: none;
+  pointer-events: none;
+  font-family: "Archivo", sans-serif;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.bot {
+  font-size: 30px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  user-select: none;
+  pointer-events: none;
+  font-family: "Archivo", sans-serif;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+}
+
+.deleteElement {
+  width: 400px;
+  height: 400px;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 100px;
+  border-radius: 20px;
+  margin: 0px;
+  font-family: "Archivo", sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #707070;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.image:hover .deleteElement {
+  visibility: visible;
+  opacity: 0.7;
+}

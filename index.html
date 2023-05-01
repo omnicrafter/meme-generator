@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="topPortion">
+      <h1>The Meme Generator!</h1>
+      <div class="formContainer">
+        <form class="memeForm">
+          <input
+            type="text"
+            class="imageLink"
+            placeholder="Image URL"
+            required
+          />
+          <input type="text" class="topText" placeholder="Top Text" required />
+          <input
+            type="text"
+            class="bottomText"
+            placeholder="Bottom Text"
+            required
+          />
+          <input type="button" class="submitButton" value="Generate Meme" />
+        </form>
+      </div>
+    </div>
+    <div class="memeContainer"></div>
+  </body>
+</html>
